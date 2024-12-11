@@ -1,0 +1,309 @@
+/* SETTINGS ----------- */
+
+@font-face {
+    font-family: 'Playlist Script';
+    src: url('fonts/PlaylistScript.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Chocolates';
+    src: url('fonts/TTChocolates.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+}
+
+/* -------------------- */
+/* NAVBAR ------------- */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+nav {
+    margin: 8px;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #50af9a;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+}
+
+.navbar ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 2.5%;
+    margin-right: 6%
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 1rem;
+    font-size: 22px;
+    font-family: 'Pacifico', 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+#nav-link2 {
+    margin-left: 30%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+    /* DROPDOWN */
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    color: #00bcd4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+    /* -------- */
+
+/* -------------------- */
+/* FOOTER ------------- */
+
+footer {
+    background-color: #50af9a;
+    color: #fff;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    padding: 5px;
+    border-top: 2px solid;
+    margin-top: 50px;
+}
+
+.footer_nav {
+    max-width: 20%;
+    position: relative;
+    left: 50%
+}
+
+/* -------------------- */
+/* PAGE --------------- */
+
+    /* UPPER SECTION */
+
+.sec_upper {
+    text-align: center;
+}
+
+#sec_upper h1 {
+    color: white;
+    font-family: 'Playlist Script';
+    font-size: 6em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: lighter;
+}
+
+#sec_upper p {
+    color: white;
+    font-family: 'TT Chocolates';
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    position: relative;
+    bottom: 20px;
+    margin: 10px
+}
+
+#sec_upper #p1 {
+    font-size: 1.5em;
+}
+
+#sec_upper #p2 {
+    font-size: 2.5em;
+}
+
+#sec_upper a {
+    background-color: #fff;
+    padding: 4px 5%;
+    color: #000;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-size: 1.5em;
+    border-radius: 30px;
+    border: #000 3px solid;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+    /* --------- */
+
+    /* INDEX SECTION */
+
+.sec_index1 h3 {
+    color: white;
+    font-family: 'TT Chocolates';
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    margin: 10px;
+}
+
+.sec_index1 {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#index-sec1-cont {
+    text-align: center;
+    background-color: #fff;
+    color:#000;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+.sec_index2 {
+    margin-top: 50px;
+}
+
+.sec_index2 h3 {
+    color: white;
+    font-family: 'TT Chocolates';
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    margin: 10px
+}
+
+#index-survey {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    max-width: 50%;
+    margin: auto;
+    background-color: #fff;
+    color: black;
+    padding: 25px;
+    border-radius: 50px;
+    font-size: 1.1em;
+}
+
+#index-survey #submit {
+    background-color: #50af9a;
+    color:#fff;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+    /* ------------- */
+
+    /* LOGIN SECTION */
+
+.sec_login1 {
+    text-align: center;
+}
+
+#sec_login1 input {
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    border: #000 3px solid;
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+#sec_login1 #input {
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+#sec_login1 #submit {
+    width: 20%;
+    margin-top: 15px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+    /* ------------- */
+
+    /* EXPLORE SECTION */
+
+
+
+    /* --------------- */
+
+    /* CONTACT SECTION */
+
+
+
+    /* --------------- */
+
+/* -------------------- */
